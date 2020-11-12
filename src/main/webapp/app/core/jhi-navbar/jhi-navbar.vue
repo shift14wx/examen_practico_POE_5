@@ -26,7 +26,7 @@
 
                 <b-nav-item to="/cargos" exact>
                     <span>
-                        <font-awesome-icon icon="home" />
+                        <font-awesome-icon icon="pointer" />
                         <span v-text="$t('global.menu.entities.cargos')">Cargos</span>
                     </span>
                 </b-nav-item>
@@ -38,7 +38,7 @@
                 </b-nav-item>
                    <b-nav-item to="/empleados" exact>
                     <span>
-                        <font-awesome-icon icon="home" />
+                        <font-awesome-icon icon="pointer" />
                         <span v-text="$t('global.menu.entities.empleados')">Empleados</span>
                     </span>
                 </b-nav-item>

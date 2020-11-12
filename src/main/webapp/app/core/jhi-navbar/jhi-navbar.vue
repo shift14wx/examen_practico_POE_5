@@ -23,7 +23,26 @@
                         <span v-text="$t('global.menu.home')">Home</span>
                     </span>
                 </b-nav-item>
-                <b-nav-item-dropdown
+
+                <b-nav-item to="/cargos" exact>
+                    <span>
+                        <font-awesome-icon icon="home" />
+                        <span v-text="$t('global.menu.home')">Cargos</span>
+                    </span>
+                </b-nav-item>
+                <b-nav-item to="/sucursales" exact>
+                    <span>
+                        <font-awesome-icon icon="home" />
+                        <span v-text="$t('global.menu.home')">Sucursales</span>
+                    </span>
+                   <b-nav-item to="/empleados" exact>
+                    <span>
+                        <font-awesome-icon icon="home" />
+                        <span v-text="$t('global.menu.home')">Empleados</span>
+                    </span>
+                </b-nav-item>
+                </b-nav-item>
+                <!--<b-nav-item-dropdown
                     right
                     id="entity-menu"
                     v-if="authenticated"
@@ -45,8 +64,8 @@
                         <span v-text="$t('global.menu.entities.empleados')">Empleados</span>
                     </b-dropdown-item>
                     <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
-                </b-nav-item-dropdown>
-                <b-nav-item-dropdown
+                </b-nav-item-dropdown>-->
+               <!-- <b-nav-item-dropdown
                     right
                     id="admin-menu"
                     v-if="hasAnyAuthority('ROLE_ADMIN') && authenticated"
@@ -89,7 +108,7 @@
                         <font-awesome-icon icon="hdd" />
                         <span v-text="$t('global.menu.admin.database')">Database</span>
                     </b-dropdown-item>
-                </b-nav-item-dropdown>
+                </b-nav-item-dropdown>-->
                 <b-nav-item-dropdown id="languagesnavBarDropdown" right v-if="languages && Object.keys(languages).length > 1">
                     <span slot="button-content">
                         <font-awesome-icon icon="flag" />

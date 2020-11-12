@@ -1,0 +1,28 @@
+{
+  "name": "Cargos",
+  "fields": [
+    {
+      "fieldName": "cargo",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "empleados",
+      "otherEntityRelationshipName": "cargos",
+      "relationshipName": "empleados"
+    }
+  ],
+  "changelogDate": "20201112042534",
+  "entityTableName": "cargos",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

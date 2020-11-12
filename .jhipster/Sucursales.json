@@ -1,0 +1,32 @@
+{
+  "name": "Sucursales",
+  "fields": [
+    {
+      "fieldName": "sucursal",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "empleados",
+      "otherEntityRelationshipName": "sucursales",
+      "relationshipName": "empleados"
+    }
+  ],
+  "changelogDate": "20201112042634",
+  "entityTableName": "sucursales",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

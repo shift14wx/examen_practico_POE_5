@@ -1,0 +1,44 @@
+{
+  "name": "Empleados",
+  "fields": [
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sueldo",
+      "fieldType": "Double"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "cargos",
+      "otherEntityRelationshipName": "empleados",
+      "relationshipName": "cargos",
+      "otherEntityField": "id"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "sucursales",
+      "otherEntityRelationshipName": "empleados",
+      "relationshipName": "sucursales",
+      "otherEntityField": "id"
+    }
+  ],
+  "changelogDate": "20201112042734",
+  "entityTableName": "empleados",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "clientRootFolder": "",
+  "applications": "*"
+}

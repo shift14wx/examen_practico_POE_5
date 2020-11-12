@@ -1,0 +1,22 @@
+entity Cargos {
+cargo String
+}
+
+entity Sucursales {
+  sucursal String
+  telefono String
+}
+
+entity Empleados {
+  nombre String
+  telefono String
+  sueldo Double
+}
+
+relationship OneToMany {
+  Cargos to Empleados
+}
+
+relationship OneToMany {
+  Sucursales to Empleados
+}

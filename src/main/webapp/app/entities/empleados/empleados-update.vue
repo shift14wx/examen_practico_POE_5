@@ -28,14 +28,15 @@
                         <label class="form-control-label" v-text="$t('examenpracticocincoApp.empleados.cargos')" for="empleados-cargos">Cargos</label>
                         <select class="form-control" id="empleados-cargos" name="cargos" v-model="empleados.cargos">
                             <option v-bind:value="null"></option>
-                            <option v-bind:value="empleados.cargos && cargosOption.id === empleados.cargos.id ? empleados.cargos : cargosOption" v-for="cargosOption in cargos" :key="cargosOption.id">{{cargosOption.id}}</option>
+                            <option v-bind:value="empleados.cargos && cargosOption.id === empleados.cargos.id ? empleados.cargos : cargosOption" v-for="cargosOption in cargos" :key="cargosOption.id">{{cargosOption.id + "-) "+cargosOption.cargo}}</option>
                         </select>
                     </div>
+
                     <div class="form-group">
                         <label class="form-control-label" v-text="$t('examenpracticocincoApp.empleados.sucursales')" for="empleados-sucursales">Sucursales</label>
                         <select class="form-control" id="empleados-sucursales" name="sucursales" v-model="empleados.sucursales">
                             <option v-bind:value="null"></option>
-                            <option v-bind:value="empleados.sucursales && sucursalesOption.id === empleados.sucursales.id ? empleados.sucursales : sucursalesOption" v-for="sucursalesOption in sucursales" :key="sucursalesOption.id">{{sucursalesOption.id}}</option>
+                            <option v-bind:value="empleados.sucursales && sucursalesOption.id === empleados.sucursales.id ? empleados.sucursales : sucursalesOption" v-for="sucursalesOption in sucursales" :key="sucursalesOption.id">{{sucursalesOption.id+"-) "+sucursalesOption.sucursal}}</option>
                         </select>
                     </div>
                 </div>

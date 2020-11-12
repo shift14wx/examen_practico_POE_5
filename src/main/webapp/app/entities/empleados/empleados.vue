@@ -2,6 +2,13 @@
     <div>
         <h2 id="page-heading">
             <span v-text="$t('examenpracticocincoApp.empleados.home.title')" id="empleados-heading">Empleados</span>
+<a  href="/api/empleados/report" tag="button" id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-empleados">
+                <font-awesome-icon icon="file-pdf"></font-awesome-icon>
+                <span>
+                    Imprimir reporte
+                </span>
+            </a>
+            &nbsp;
             <router-link :to="{name: 'EmpleadosCreate'}" tag="button" id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-empleados">
                 <font-awesome-icon icon="plus"></font-awesome-icon>
                 <span  v-text="$t('examenpracticocincoApp.empleados.home.createLabel')">

@@ -27,20 +27,20 @@
                 <b-nav-item to="/cargos" exact>
                     <span>
                         <font-awesome-icon icon="home" />
-                        <span v-text="$t('global.menu.home')">Cargos</span>
+                        <span v-text="$t('global.menu.entities.cargos')">Cargos</span>
                     </span>
                 </b-nav-item>
                 <b-nav-item to="/sucursales" exact>
                     <span>
-                        <font-awesome-icon icon="home" />
-                        <span v-text="$t('global.menu.home')">Sucursales</span>
+                        <font-awesome-icon icon="pointer" />
+                        <span v-text="$t('global.menu.entities.sucursales')">Sucursales</span>
                     </span>
+                </b-nav-item>
                    <b-nav-item to="/empleados" exact>
                     <span>
                         <font-awesome-icon icon="home" />
-                        <span v-text="$t('global.menu.home')">Empleados</span>
+                        <span v-text="$t('global.menu.entities.empleados')">Empleados</span>
                     </span>
-                </b-nav-item>
                 </b-nav-item>
                 <!--<b-nav-item-dropdown
                     right
@@ -63,7 +63,7 @@
                         <font-awesome-icon icon="asterisk" />
                         <span v-text="$t('global.menu.entities.empleados')">Empleados</span>
                     </b-dropdown-item>
-                    <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here -->
+                    <!-- jhipster-needle-add-entity-to-menu - JHipster will add entities to the menu here 
                 </b-nav-item-dropdown>-->
                <!-- <b-nav-item-dropdown
                     right
